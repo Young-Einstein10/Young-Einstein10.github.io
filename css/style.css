@@ -1,10 +1,17 @@
+:root {
+  --bg-color: #151313;
+  --bg-color-trans: rgba(21, 19, 19, 0.9);
+  --text-color: #e6af2e;
+  --text-color-hover: rgba(255, 255, 255, 0.75);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #222831;
-  color: #f1b10b;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: "IBM Plex Mono", monospace;
   line-height: 1.8;
   box-sizing: border-box;
@@ -16,6 +23,10 @@ section {
   padding-top: 80px;
 }
 
+a:hover {
+  color: var(--text-color-hover);
+}
+
 section#bg-home .header {
   height: 80px;
   position: fixed;
@@ -23,7 +34,7 @@ section#bg-home .header {
   right: 0;
   top: 0;
   z-index: 3;
-  background-color: rgb(34 40 49 / 0.97);
+  background-color: var(--bg-color-trans);
   border-bottom: solid 1px rgb(241 177 11 / 0.2);
 }
 
@@ -35,11 +46,11 @@ section#bg-home {
 }
 
 .intro p:first-child {
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .intro p:last-child {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .title {
@@ -50,7 +61,7 @@ section#bg-home {
 }
 
 .myname {
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .navbar {
@@ -60,11 +71,15 @@ section#bg-home {
 
 .navbar *,
 .nav-item * {
-  color: #dfa612;
+  color: var(--text-color);
+}
+
+.social-links a:hover {
+  color: var(--text-color-hover);
 }
 
 .social-links a i {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .content-wrapper {
@@ -72,29 +87,31 @@ section#bg-home {
 }
 
 .navbar-nav .nav-item .nav-link {
-  color: #dfa612;
+  color: var(--text-color);
   margin: 0 10px;
 }
 
 a {
-  color: #dfa612;
+  color: var(--text-color);
 }
 
 .btn {
-  background-color: #1a1d24;
-  color: #dfa612;
-  border: solid 1px #dfa612;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: solid 1px var(--text-color);
   border-radius: 0;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   color: #212529;
   text-decoration: none;
-  background: #dfa612;
+  background: var(--text-color);
+  box-shadow: none;
 }
 
 .work-box {
-  background-color: #1a1d24;
+  background-color: var(--bg-color);
   border-radius: 5px;
 }
 
@@ -126,8 +143,8 @@ nav .navbar-brand {
   height: 100%;
   border-radius: 3px;
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-  background-color: #daa51b;
-  color: #222831;
+  background-color: var(--text-color);
+  color: var(--bg-color);
 }
 
 .work-box header {
@@ -216,6 +233,7 @@ div .project-content {
 
 #contact .btn {
   padding: 1rem 2.5rem;
+  font-weight: 600;
 }
 
 ul {
@@ -277,7 +295,7 @@ span.date {
     right: 0;
     top: 0;
     z-index: 3;
-    background-color: rgb(34 40 49 / 0.97);
+    background-color: var(--bg-color-trans);
     border-bottom: solid 1px rgb(241 177 11 / 0.2);
   }
 
@@ -300,7 +318,7 @@ span.date {
 
 @media screen and (max-width: 576px) {
   .myname {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .skills-intro {
@@ -312,11 +330,11 @@ span.date {
   }
 
   .intro p:first-child {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .intro p:last-child {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 

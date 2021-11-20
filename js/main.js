@@ -116,7 +116,7 @@ const projectTemplate = ({
               </div>
             </header>
             <footer>
-              <ul id="stack" class="d-flex list-unstyled" style="font-size: 12px;">
+              <ul id="stack" class="d-flex list-unstyled" style="font-size: 13px;">
                 ${listTechnologies(technologies)}                           
               </ul>
             </footer>

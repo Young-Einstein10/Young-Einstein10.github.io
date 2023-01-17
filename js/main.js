@@ -3,6 +3,21 @@ const projectContainer = document.querySelector(".project-container");
 
 const projectList = [
   {
+    name: "HelpmeAlert",
+    description: `A Safety emergency tool you can use on the Twitter platform to notify your emergency contacts of your situation.`,
+    githubUrl: "https://github.com/Young-Einstein10/helpmealert",
+    deployedUrl: "https://helpmealert.vercel.app",
+    technologies: [
+      "NextJS",
+      "Typescript",
+      "NodeJS",
+      "Prisma",
+      "PostgreSQL",
+      "Twitter API",
+      "Chakra UI",
+    ],
+  },
+  {
     name: "Goal Tracker",
     description: `A Project Management Application which helps users in planning
       and delegating tasks they have in their schedule.`,
@@ -40,14 +55,14 @@ const projectList = [
     deployedUrl: "https://build4-sdg-frontend.now.sh/",
     technologies: ["HTML/CSS", "Javascript"],
   },
-  {
-    name: "Naija News App",
-    description: `A mini news application bringing to you the latest and popular stories across Nigeria.`,
-    githubUrl:
-      "https://github.com/Young-Einstein10/30DaysOfCode/tree/master/Day18",
-    deployedUrl: "https://naija-news-7fa3d.firebaseapp.com/",
-    technologies: ["React", "News API"],
-  },
+  // {
+  //   name: "Naija News App",
+  //   description: `A mini news application bringing to you the latest and popular stories across Nigeria.`,
+  //   githubUrl:
+  //     "https://github.com/Young-Einstein10/30DaysOfCode/tree/master/Day18",
+  //   deployedUrl: "https://naija-news-7fa3d.firebaseapp.com/",
+  //   technologies: ["React", "News API"],
+  // },
   {
     name: "Movie App",
     description: `A Simple React App that fetches the latest and trending movies in the movie industry.`,

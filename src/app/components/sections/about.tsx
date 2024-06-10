@@ -22,9 +22,9 @@ export const About = () => {
           <p>
             I am a product-minded Software Engineer with 4 years of experience
             building software and great experiences within the Javascript
-            Ecosystem. I'm passionate about building products that positively
-            impact people's lives worldwide by working with various startups and
-            product-led organizations.
+            Ecosystem. I&apos;m passionate about building products that
+            positively impact people&apos;s lives worldwide by working with
+            various startups and product-led organizations.
           </p>
           <p>
             I am interested in working with startups and product-led
